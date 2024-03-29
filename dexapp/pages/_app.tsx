@@ -11,6 +11,8 @@ const sdk = new ThirdwebSDK("https://rpc.testnet.tabichain.com")
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider
+      chainRpc={{ [ChainId.Mainnet]: "https://rpc.testnet.tabichain.com" }}
+      desiredChainId={ChainId.Mainnet}
       clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
       activeChain={"https://rpc.testnet.tabichain.com"}
     >
