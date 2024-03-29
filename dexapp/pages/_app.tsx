@@ -6,9 +6,8 @@ import Navbar from "../components/Navbar";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider
-      chainRpc={{ [ChainId.Mainnet]: " https://rpc.testnet.tabichain.com" }}
-      desiredChainId={ChainId.Mainnet}
-      activeChain= "Tabi"
+      chainRpc={{ [9789.Testnet]: " https://rpc.testnet.tabichain.com" }}
+      desiredChainId={C9789.Testnet}
       clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
     >
       <Navbar />
